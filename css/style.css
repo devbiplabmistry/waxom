@@ -1,0 +1,1221 @@
+/* =============================================================================
+                               common part start Here
+   ============================================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    line-height: 0.8;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* =============================================================================
+                               common part End Here
+   ============================================================================= */
+/* =============================================================================
+                               Navbar part start Here
+   ============================================================================= */
+#navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all linear .3s;
+}
+
+.menu ul li a:hover {
+    color: #c7b299;
+}
+
+.logo {
+    box-sizing: border-box;
+    display: block;
+}
+
+.menu ul li:last-child a {
+    padding-right: 0;
+}
+
+/* =============================================================================
+                               navbar part End Here
+   ============================================================================= */
+/* =============================================================================
+                               Banner part start Here
+   ============================================================================= */
+#banner {
+    padding-top: 385px;
+    padding-bottom: 385px;
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+#banner::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 7, 7, 0.7);
+    z-index: -1;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.banner-text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: #fff;
+    padding-top: 22px;
+    padding-bottom: 23px;
+}
+
+.banner-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 24px;
+    padding: 0 288px;
+}
+
+.button {
+    padding-top: 64px;
+
+}
+
+.button a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #fff;
+    padding: 18px 37px 18px 37px;
+    background-color: #998675;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 #998675;
+}
+
+/* =============================================================================
+                               Banner part End Here
+   ============================================================================= */
+/* =============================================================================
+                              Design part start Here
+   ============================================================================= */
+#design {
+    padding-top: 82px;
+    padding-bottom: 82px;
+}
+
+.design-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 108px;
+}
+
+.design-item {
+    width: 285px;
+    padding-right: 10px;
+}
+
+.design-item:hover .design-content h3 {
+    color: #c7b299;
+}
+
+.design-item:hover .design-content p::after {
+    background-color: #c7b299;
+}
+
+.design-content {
+    padding-top: 26px;
+
+}
+
+.design-content h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #555555;
+    transition: all linear .3s;
+}
+
+.design-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+    line-height: 24px;
+    padding-top: 17px;
+    position: relative;
+}
+
+.design-content p::after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    top: 118px;
+    left: 97px;
+    text-align: center;
+    transition: all linear .3s;
+}
+
+.last-design {
+    padding-right: 0;
+}
+
+.design-idea {
+    text-align: center;
+    background-color: #fbfaf8;
+}
+
+.design-idea h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #555555;
+}
+
+.design-idea p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555555;
+    line-height: 28px;
+    margin-top: 18px;
+    padding: 0 254px;
+}
+
+.d-heading {
+    padding-top: 84px;
+}
+
+.design-idea img {
+    width: 100%;
+    display: block;
+    margin-top: 35px;
+}
+
+/* =============================================================================
+                               Design part End Here
+   ============================================================================= */
+/* =============================================================================
+                               Purchage part start Here
+   ============================================================================= */
+#purcharge {
+    padding: 50px 0;
+    background: linear-gradient(to right, #211b19, #4e3427);
+    text-align: center;
+}
+
+.p-head h3 {
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+
+.p-head p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #615855;
+}
+
+.p-head span {
+    color: #c7b299;
+}
+
+.purse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.purse a {
+    border: 1px solid #736357;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 28px;
+    background-color: #998675;
+    box-shadow: 0 3px 0 0 #998675;
+}
+
+.purse-btn {
+    padding-top: 20px;
+}
+
+/* =============================================================================
+                               purchage part End Here
+   ============================================================================= */
+/* =============================================================================
+                               Mixit part start Here
+   ============================================================================= */
+#mixitup {
+    padding: 82px 0;
+    background-color: #fff;
+}
+
+.mixit-head {
+    text-align: center;
+}
+
+.mixit-head h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #555555;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.mixit-head p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+    padding: 0 162px;
+    line-height: 28px;
+}
+
+.mixit-butn button span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #8c8c8c;
+    transition: all linear .3s;
+}
+
+.mixit-butn button {
+    border: 1px solid #ebebeb;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: 5px;
+    transition: all linear .3s;
+
+}
+
+.mixit-butn {
+    text-align: center;
+    margin-top: 36px;
+}
+
+.mixit-butn button:last-child {
+    margin-right: 0;
+}
+
+.mixit-butn button:hover {
+    background-color: #998675;
+
+}
+
+.mixit-butn button:hover span {
+    color: #fff;
+
+}
+
+.mixit-content h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #c7b299;
+
+    font-weight: 500;
+    transition: all linear .3s;
+}
+
+.mixit-content {
+    background-color: #fbfaf8;
+    padding-top: 26px;
+    position: relative;
+    transition: all linear .3s;
+    padding-bottom: 25px;
+}
+
+.mixit-content::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 10px 15px;
+    border-color: transparent transparent #fbfaf8 transparent;
+    transition: all linear .3s;
+}
+
+.mixit-content p {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #d1d1d1;
+    padding-top: 15px;
+    transition: all linear .3s;
+}
+
+.mixit-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 44px;
+}
+
+
+.mixit-img {
+    position: relative;
+}
+
+.color-overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(111, 66, 66, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.mixit-fonts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.color-overly a {
+
+    transition: all linear .3s;
+}
+
+.mixit-fonts a {
+    font-size: 25px;
+    color: #fff;
+    padding: 12px;
+    transition: all linear .3s;
+}
+
+.mixit-item:hover .color-overly {
+    opacity: 1;
+}
+
+.mixit-item:hover .mixit-content {
+    background-color: #362f2d;
+}
+
+.mixit-item:hover .mixit-content h3 {
+    color: #fff;
+}
+
+.mixit-item:hover .mixit-content p {
+    color: #706358;
+}
+
+.mixit-item:hover .color-overly a {
+    color: #c7b299;
+}
+
+.mixit-item:hover .mixit-content::after {
+
+    border-style: solid;
+    border-width: 0 15px 10px 15px;
+    border-color: transparent transparent #362f2d transparent;
+}
+
+.last-line {
+    margin-top: 30px;
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.load-more a {
+    padding: 19px 44px;
+    background-color: #998675;
+    color: #fff;
+    box-shadow: 0 3px 0 0 #998675;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+}
+
+/* =============================================================================
+                               Mixit-up part End Here
+   ============================================================================= */
+/* =============================================================================
+                               Video part start Here
+   ============================================================================= */
+#video {
+    margin-top: 22px;
+}
+
+.video-part {
+    position: relative;
+}
+
+.clr-overly {
+    padding-top: 226px;
+    padding-bottom: 257px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(114, 102, 102, 0.5);
+    text-align: center;
+}
+
+.v-content h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 22px;
+    padding-top: 38px;
+}
+
+.v-content p {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 365px;
+    line-height: 24px;
+}
+
+#fortfolio {
+    background-color: #fbfaf8;
+
+}
+
+.port-wraper {
+    display: flex;
+
+    justify-content: space-between;
+    padding-top: 77px;
+}
+
+.port-content h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #555555;
+
+}
+
+.port-content p {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+    line-height: 25px;
+    padding: 0 41px;
+    padding-top: 34px;
+}
+
+.bottom-paragraph i {
+    color: #c7b299;
+    margin-right: 13px;
+    font-size: 21px;
+}
+
+.bottom-paragraph {
+    padding-top: 30px;
+    padding-left: 78px;
+}
+
+.bottom-paragraph span {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.two {
+
+    padding-bottom: 5px;
+}
+
+/* =============================================================================
+                               video part End Here
+   ============================================================================= */
+
+
+/* =============================================================================
+                               counter part start Here
+   ============================================================================= */
+#count {
+    padding-top: 69px;
+    padding-bottom: 55px;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3326 100%);
+}
+
+.c-icon i {
+    color: #c7b299;
+    font-size: 45px;
+}
+
+.c-number h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #fff;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+
+.c-text h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c7b299;
+    text-transform: uppercase;
+}
+
+.c-text {
+    position: relative;
+
+}
+
+.c-text::after {
+
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    top: 32px;
+    left: 45px;
+    background-color: #fff;
+
+}
+
+.countt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.c-icon {
+    text-align: center;
+}
+
+/* =============================================================================
+                               counter part End Here
+   ============================================================================= */
+/* =============================================================================
+                             post part start Here
+   ============================================================================= */
+#post {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.post-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.post-head {
+    text-align: center;
+}
+
+.post-head p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555555;
+    line-height: 28px;
+    margin-top: 18px;
+    padding: 0 193px;
+}
+
+.post-head h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #555555;
+
+}
+
+.post-item {
+    width: 370px;
+    border: 1px solid #f8f8f8;
+
+
+}
+
+.post-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 22px;
+    padding: 0 31px;
+    transition: all linear .3s;
+}
+
+.post-text h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #555555;
+    padding-bottom: 13px;
+    padding-top: 30px;
+    transition: all linear .3s;
+}
+
+.post-text {
+    text-align: center;
+    position: relative;
+    transition: all linear .3s;
+}
+
+.post-text a {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c7b299;
+    padding-top: 30px;
+}
+
+.post-img {
+    position: relative;
+}
+
+.post-img img {
+    max-width: 100%;
+}
+
+.read {
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 30px;
+    padding-bottom: 33px;
+}
+
+.read h4 span {
+    font-size: 15px;
+    padding-left: 10px;
+    color: #c7b299;
+}
+
+.p-color-overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(79, 50, 50, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.overly-text {
+    position: absolute;
+    top: 2px;
+    left: -1px;
+
+}
+
+.overly-text p {
+    position: relative;
+    top: 20px;
+    left: 22px;
+
+    padding: 9px 11px 9px 13px;
+    background-color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.overly-text span {
+    position: relative;
+    top: 25px;
+    left: 22px;
+    background-color: #252525;
+    padding: 9px 14px 9px 13px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12PX;
+    font-weight: 400;
+    color: #FFF;
+    transition: all linear .3s;
+}
+
+.P-TEXT-OVERLY {
+    background-color: #362f2d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.read h4 a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c7b299;
+}
+
+.post-item:hover .p-color-overly {
+    opacity: 1;
+}
+
+.post-item:hover .p-color-overly p {
+    background-color: #c7b299;
+}
+
+.post-item:hover .p-color-overly span {
+    background-color: #a48d72;
+}
+
+.post-item:hover .post-text {
+    background-color: #362f2d;
+}
+
+.post-item:hover .post-text h4 {
+    color: #c7b299;
+}
+
+.post-item:hover .post-text p {
+    color: #fff;
+}
+
+.post-item:hover .overly-text p {
+    background-color: #c7b299;
+}
+
+.post-item:hover .overly-text span {
+    background-color: #a48d72;
+}
+
+.circle {
+    text-align: center;
+    padding-top: 29px;
+    text-align: center;
+}
+
+.circle .left {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    line-height: 22px;
+    font-size: 11px;
+    color: #dadada;
+    border: 1px solid #dadada;
+    margin-right: 21px;
+}
+
+.circle .right {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    line-height: 22px;
+    font-size: 11px;
+    color: #cab79f;
+    border: 1px solid #cab79f;
+}
+
+/* =============================================================================
+                               post part End Here
+   ============================================================================= */
+/* =============================================================================
+                              Feature part start Here
+   ============================================================================= */
+#feature {
+    background: url(../images/background2.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 140px 0;
+}
+
+.logo-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.logos {
+    max-width: 270px;
+    margin-right: 30px;
+}
+
+/* =============================================================================
+                               feature part start Here
+   ============================================================================= */
+/* =============================================================================
+                               footer part start Here
+   ============================================================================= */
+#footer {
+    padding: 80px 0;
+    background-color: #191919;
+}
+
+.f-item {
+    width: 292px;
+}
+
+.f-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555555;
+    line-height: 24px;
+    padding-right: 20px;
+
+}
+
+.f-text a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #d1d1d1;
+    line-height: 24px;
+}
+
+.f-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.f-h h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sec-txt .f-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #363636;
+
+}
+
+.sec-txt .f-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #363636;
+
+}
+
+.sec-txt .second {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555;
+
+    line-height: 20px;
+}
+
+.middle .f-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+
+    line-height: 20px;
+}
+
+.middle .third {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #c7b299;
+
+    line-height: 20px;
+}
+
+.middle {
+    position: relative;
+    padding: 13px 0;
+}
+
+.middle::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 269px;
+    height: 1px;
+    background-color: #252525;
+}
+
+.middle::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    width: 269px;
+    height: 1px;
+    background-color: #252525;
+
+}
+
+.center {
+    position: relative;
+    padding: 13px 0;
+}
+
+.center::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 269px;
+    height: 1px;
+    background-color: #252525;
+
+}
+
+.center::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    width: 269px;
+    height: 1px;
+    background-color: #252525;
+
+}
+
+.f-last .images {
+    width: 127px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #7777;
+}
+
+.f-last {
+    width: 292px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.f-last img {
+    width: 100%;
+}
+
+.f-header {
+    padding-bottom: 20px;
+}
+
+.f-header {
+    padding-bottom: 20px;
+}
+
+.f-last .images {
+    margin-top: 8px;
+}
+
+.second span {
+    color: #00bff3;
+}
+
+.third span {
+    color: #00bff3;
+}
+
+.logo-1 {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.logo2 {
+
+    padding-bottom: 10px;
+}
+
+.logo3 {
+    padding-right: 10px;
+
+}
+
+.second {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.f-1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* =============================================================================
+                              footer part End Here
+   ============================================================================= */
+/* =============================================================================
+                               copyright part start Here
+   ============================================================================= */
+#copy {
+    padding-top: 46px;
+    padding-bottom: 53px;
+    background-color: #111111;
+}
+
+.cfirst-part span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #555555;
+}
+
+.cfirst-part .c {
+    color: #959595;
+}
+
+.cfirst-part .D {
+    color: #c7b299;
+}
+
+.csecond-part span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #555555;
+}
+
+.csecond-part .c {
+
+    color: #959595;
+}
+
+.copy-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* =============================================================================
+                               copyright part End Here
+   ============================================================================= */
+
+/* =============================================================================
+                               sticky-menu part start Here
+   ============================================================================= */
+.sticky-menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: sticky 1s;
+    background-color: tomato;
+}
+
+@keyframes sticky {
+    from {
+        top: -100px;
+
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+/* =============================================================================
+                               sticky-menu part End Here
+   ============================================================================= */
